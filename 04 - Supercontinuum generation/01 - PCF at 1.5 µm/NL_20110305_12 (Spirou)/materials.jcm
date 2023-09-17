@@ -1,0 +1,13 @@
+
+Material {
+  # Vacuum (models air)
+  DomainId = 1
+  RelPermeability = 1.0
+  RelPermittivity = 1.0
+}
+Material {
+  # glass (provide permittivity)
+  DomainId = 2
+  RelPermeability = 1.0
+  RelPermittivity = 2.11722364487979
+}

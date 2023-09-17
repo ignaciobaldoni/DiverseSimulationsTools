@@ -1,0 +1,3 @@
+include "Run_code.inc"
+
+;Sum the ASE powers. Add known pulse with ASE contribution.

@@ -1,0 +1,68 @@
+
+<?
+keys["lengthUnit"] = 1.0e-6 * keys["scale"]
+?>
+
+Layout {
+  UnitOfLength = %(lengthUnit)e
+  MeshOptions {
+    MinimumMeshAngle = 30
+    MaximumMeshAngle = 130
+    MaximumSidelength = 0.8
+  }
+   Circle { 
+     DomainId=2
+     Name = "ComputationalDomain"
+     Priority=-1
+     Radius = 18.5
+     RefineAll = 2
+     BoundarySegment {
+      BoundaryClass = Transparent
+   }
+}
+
+
+  Circle {
+    Radius = 0.965
+    RefineAll = 1
+    LatticeCopies {
+      LatticeVectorLengths=[1.20000000000 2.07846100000]
+      LatticeAngle = 90
+      Positions { 
+        IndexShiftY = 0
+        RangeStart = [-14 -7]
+        DomainIds = 
+               [0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0;
+                0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0;
+                0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0;
+                0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0;
+                0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0;
+                0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0;
+                0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0;
+                1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1;
+                0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0;
+                0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0;
+                0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0;
+                0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0;
+                0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0;
+                0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0;
+                0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 0 0 0 0]
+      } 
+    }
+  }
+  Circle {
+    Radius = 0.3605
+    DomainId = 1
+    RefineAll = 1
+    GlobalPosition = [-2.38 0]
+   
+  }
+  
+  Circle {
+    Radius = 0.3605
+    DomainId = 1
+    RefineAll = 1
+    GlobalPosition = [2.38 0]
+    
+  }
+}

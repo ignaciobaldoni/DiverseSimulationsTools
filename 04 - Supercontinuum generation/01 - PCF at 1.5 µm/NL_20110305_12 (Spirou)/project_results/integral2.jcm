@@ -1,0 +1,25 @@
+/* <BLOBHead>
+__BLOBTYPE__=Table
+__MODE__=TEXT
+__OPTIONS__=LHExchanged
+__OWNER__=JCMwave
+__TAG__=158cca9c48bae5c3f6ce572c7f5366b8
+__VERSION__=1.0.0
+Column1:Name=DomainId
+Column1:Type=int
+Column2:Name=Integrate(E^4)_1
+Column2:Type=doublecomplex
+Column3:Name=Integrate(E^4)_2
+Column3:Type=doublecomplex
+Title=Integrate(E^4)
+<I>NColumns=3
+<I>NRows=2
+*/
+# Row 1
+1
+(1.490303037233269e+17,0.000000000000000e+00)
+(2.274324909877339e+17,0.000000000000000e+00)
+# Row 2
+2
+(7.430787783640404e+17,0.000000000000000e+00)
+(5.004038334466988e+17,0.000000000000000e+00)

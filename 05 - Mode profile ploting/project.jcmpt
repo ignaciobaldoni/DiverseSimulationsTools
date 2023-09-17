@@ -1,0 +1,63 @@
+
+Project {
+  InfoLevel = 3
+  Electromagnetics {
+    TimeHarmonic {
+      PropagatingMode {
+        Lambda0 = %(lambda0)e
+        FieldComponents = ElectricXYZ
+        #AxisPositionX = 1888 # radius of curvature
+        SelectionCriterion {
+          NearGuess {
+            Guess = %(n_guess)e
+            NumberEigenvalues = %(modes)e
+          }
+        }
+      }
+    }
+  }
+}
+# two integrals for computing effective mode area
+PostProcess {
+  DensityIntegration {
+    FieldBagPath = "project_results/fieldbag.jcm"
+    OutputFileName = "project_results/integral1.jcm"
+    Python {
+      IntegralName = "Integrate(E^2)"
+      Expression = "value = dot(E.conj(),E)"
+      Parameter {
+        Name = "E"
+        FieldValue {
+          Quantity = ElectricFieldStrength
+        }
+      }
+    }
+  }
+}
+PostProcess {
+  DensityIntegration {
+    FieldBagPath = "project_results/fieldbag.jcm"
+    OutputFileName = "project_results/integral2.jcm"
+    Python {
+      IntegralName = "Integrate(E^4)"
+      Expression = "value = dot(E.conj(),E)**2"
+      Parameter {
+        Name = "E"
+        FieldValue {
+          Quantity = ElectricFieldStrength
+        }
+      }
+    }
+  }
+}
+# exports computed field on cartesian grid 
+PostProcess {
+  ExportFields {
+    FieldBagPath = "project_results/fieldbag.jcm"
+    OutputFileName = "project_results/fieldbag_cartesian.jcm"
+    Cartesian {
+      NGridPointsX=200
+      NGridPointsY=200
+    }
+  }
+}

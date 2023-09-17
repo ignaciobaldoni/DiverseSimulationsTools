@@ -1,0 +1,21 @@
+/* <BLOBHead>
+__BLOBTYPE__=Table
+__MODE__=TEXT
+__OPTIONS__=LHExchanged
+__OWNER__=JCMwave
+__TAG__=133d5ed6bd1610bc3d75cb852a7c0dbe
+__VERSION__=1.0.0
+Column1:Name=effective_refractive_index
+Column1:Type=doublecomplex
+Column2:Name=Precision
+Column2:Type=double
+Title=Eigenvalues
+<I>NColumns=2
+<I>NRows=2
+*/
+# Row 1
+(1.250004707960142e+00,2.096807815155131e-05)
+2.000000000000000e-08
+# Row 2
+(1.228348809515477e+00,6.074433706782568e-05)
+2.000000000000000e-08

@@ -1,0 +1,22 @@
+include Units.inc
+GainFiber1 := 22
+
+
+
+Pulse_dBm := 0 
+
+L_f1 := 3.7
+L_f2 := 0.8
+
+LD_1 := 500
+dir_p1 := forward
+LD_2 := 500
+dir_p2 := backward
+
+lMean := 1542 nm
+Loss_S := 2;
+Loss_P := 0.47
+
+
+include "My_mainAmplifier.inc"
+

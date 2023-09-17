@@ -1,0 +1,33 @@
+22db - 0.5 m - 150 mW
+-------  First stage -------
+dop. actual gain:    15.5e24 /m³
+Meas. N_Er @ 30dB:   19.4e24 /m³
+N2:                  99%
+signal (forward):    496 µW
+P_ASE_fw:            3.45 µW
+NF (1st):            2.5 dB
+SNR_out(1st):        21.6 dB
+G_signal1:           6.35 dB
+ASE1:                0.69%
+Energy per pulse:    41.6 fJ
+Peak power:          31.1 mW
+T pulse:             1.26 ps
+Geff:                6.42 dB
+Output avg power:    504 µW
+SNR from pulse:      21.4 dB
+
+5db - 1.5 m - 150 mW
+-------  First stage -------
+N2:                  98.1%
+signal (forward):    485 µW
+P_ASE_fw:            3.45 µW
+NF (1st):            2.51 dB
+SNR_out(1st):        21.5 dB
+G_signal1:           6.25 dB
+ASE1:                0.707%
+Energy per pulse:    41.1 fJ
+Peak power:          46.8 mW
+T pulse:             817 fs
+Geff:                6.37 dB
+Output avg power:    499 µW
+SNR from pulse:      21.4 dB

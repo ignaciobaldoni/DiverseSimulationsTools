@@ -1,0 +1,25 @@
+/* <BLOBHead>
+__BLOBTYPE__=Table
+__MODE__=TEXT
+__OPTIONS__=LHExchanged
+__OWNER__=JCMwave
+__TAG__=dc18b4cfc61e029c78dcb97fca628623
+__VERSION__=1.0.0
+Column1:Name=DomainId
+Column1:Type=int
+Column2:Name=Integrate(E^2)_1
+Column2:Type=doublecomplex
+Column3:Name=Integrate(E^2)_2
+Column3:Type=doublecomplex
+Title=Integrate(E^2)
+<I>NColumns=3
+<I>NRows=2
+*/
+# Row 1
+1
+(2.055400673543944e+02,0.000000000000000e+00)
+(2.822120583324512e+02,0.000000000000000e+00)
+# Row 2
+2
+(4.159250460314618e+02,0.000000000000000e+00)
+(3.717831551799326e+02,0.000000000000000e+00)
